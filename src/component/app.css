@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    margin: 0;
+    background-color: #425c4c;
+    display: flex;
+    justify-content: center;
+}
+
+.clock-container{
+    background-color: #425c4c;
+    width: 40rem;
+    margin-top: 3rem;
+}
+
+.timer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    box-shadow: 1px 2px 20px -9px black;
+    margin: 1rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 10px;
+    background-color: #22412d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons{
+    margin: 2rem;
+}
+
+.lap-container{
+    height: 20rem;
+    margin: 2rem;
+    background-color: #425c4c;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+}
+
+.heading h1{
+    color: black;
+    font-size: 3rem;
+}
+
+.laps{
+    height: 16rem;
+    overflow: auto;
+}
+
+.individual-lap{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #425c4c;
+    margin: 1rem;
+    margin-left: 0;
+    animation: animateLap 1s;
+}
+
+.little-box{
+    margin: .5rem;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 2px;
+    background-color: rgb(58, 11, 11);
+}
+
+.count{
+    margin-right: 2rem;
+    width: 1.4rem;
+}
+
+@keyframes animateLap {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
